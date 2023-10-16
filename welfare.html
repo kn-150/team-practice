@@ -11,34 +11,34 @@
 
   <body>
     <header class="header">
-      <div class="header-icon">
-        <div class="header-iconPC">
-          <img src="./img/logo-wide.png" alt="AWESOME SEのロゴ画像">
+      <div class="header-iconWrap">
+        <div class="header-icon hidden-sp">
+          <img class="header-iconImg" src="./img/logo-wide.png" alt="AWESOME SEのロゴ画像">
         </div>
-        <div class="header-iconSP">
-          <img src="./img/logo-narrow.png" alt="AWESOME SEのロゴ画像">
+        <div class="header-icon hidden-pc">
+          <img class="header-iconImg" src="./img/logo-narrow.png" alt="AWESOME SEのロゴ画像">
         </div>
       </div>
       <nav class="header-nav">
         <ul class="header-navList">
-          <li class="header-navListItem">事業紹介</li>
-          <li class="header-navListItem">仕事を知る</li>
-          <li class="header-navListItem">環境を知る</li>
-          <li class="header-navListItem">人を知る</li>
-          <li class="header-navListItem">募集要項</li>
-          <li class="header-navListItem">エントリー</li>
+          <li class="header-navListItem"><a href="#" class="link">事業紹介</a></li>
+          <li class="header-navListItem"><a href="#" class="link">仕事を知る</a></li>
+          <li class="header-navListItem"><a href="#" class="link">環境を知る</a></li>
+          <li class="header-navListItem"><a href="#" class="link">人を知る</a></li>
+          <li class="header-navListItem"><a href="#" class="link">募集要項</a></li>
+          <li class="header-navListItem"><a href="#" class="link">エントリー</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="title">
         <div class="title-logo">
-          <img src="./img/Welfare-title.png" alt="welfare">
+          <img class="title-logoImg" src="./img/Welfare-title.png" alt="welfare">
         </div>
-        <h1>福利厚生</h1>
+        <h1 class="title-text">福利厚生</h1>
       </div>
       <div class="hero">
-        <img src="./img/top-picture.jpg" alt="いいねをする男女">
+        <img class="hero-img" src="./img/top-picture.jpg" alt="いいねをする男女">
       </div>
 
       <div class="container">
@@ -49,34 +49,34 @@
             <p class="content-subTitle">・welfare</p>
             <h2 class="content-title">福利厚生のご案内</h2>
             <p class="content-text">
-              AWESOME SEは、未経験からエンジニアに！エンジニアから起業家に！をサポートするベンチャー企業です。
-              未経験の方には、エンジニア向けの研修と経験を積むための場所を確保。
+              AWESOME SEは、未経験からエンジニアに！エンジニアから起業家に！をサポートするベンチャー企業です。<br>
+              <span class="hidden-sp">未経験の方には、エンジニア向けの研修と経験を積むための場所を確保。</span>
             </p>
           </div>
 
           <div class="columns">
             <div class="columns-item">
-              <div class="columns-itemCircle">
+              <div class="columns-itemWrap">
                 <div class="columns-itemImgArea">
                   <img class="columns-itemImg" src="./img/icon1.png" alt="イラストアイコン">
                 </div>
                 <h3 class="columns-itemTitle">服装自由</h3>
-                <p class="columns-itemText">服装に制限はありません。※一般案件やSES案件に出向する場合はお客様先の規定によります</p>
+                <p class="columns-itemText">服装に制限はありません。<br>※一般案件やSES案件に出向する場合はお客様先の規定によります</p>
               </div>
             </div>
 
             <div class="columns-item">
-              <div class="columns-itemCircle">
+              <div class="columns-itemWrap">
                 <div class="columns-itemImgArea">
                   <img class="columns-itemImg" src="./img/icon1.png" alt="イラストアイコン">
                 </div>
                 <h3 class="columns-itemTitle">社内勉強会</h3>
-                <p class="columns-itemText">社内で月に1～2回、プログラミングの勉強会や研修を行っています。 社員同士でお互いに学び合うことで、更なるスキルアップを目指します。</p>
+                <p class="columns-itemText">社内で月に1～2回、プログラミングの勉強会や研修を行っています。<br>社員同士でお互いに学び合うことで、更なるスキルアップを目指します。</p>
               </div>
             </div>
 
             <div class="columns-item">
-              <div class="columns-itemCircle">
+              <div class="columns-itemWrap">
                 <div class="columns-itemImgArea">
                   <img class="columns-itemImg" src="./img/icon1.png" alt="イラストアイコン">
                 </div>
@@ -86,7 +86,7 @@
             </div>
 
             <div class="columns-item">
-              <div class="columns-itemCircle">
+              <div class="columns-itemWrap">
                 <div class="columns-itemImgArea">
                   <img class="columns-itemImg" src="./img/icon1.png" alt="イラストアイコン">
                 </div>
@@ -96,7 +96,7 @@
             </div>
 
             <div class="columns-item">
-              <div class="columns-itemCircle">
+              <div class="columns-itemWrap">
                 <div class="columns-itemImgArea">
                   <img class="columns-itemImg" src="./img/icon1.png" alt="イラストアイコン">
                 </div>
@@ -104,6 +104,10 @@
                 <p class="columns-itemText">テキストが入リますテキストが入リます。テキストが入リます、テキストが入リます。</p>
               </div>
             </div>
+
+            <div class="columns-item">
+            </div>
+
           </div>
         </div>
 
@@ -112,73 +116,85 @@
           <div class="content-textArea">
             <p class="content-subTitle">・Training</p>
             <h2 class="content-title">・教育カリキュラム</h2>
-            <p class="content-text">
-              未経験者でも安心して学べるカリキュラムとして、入門〜基礎編をそれぞれの進捗に合わせて取り組んでいただきます。
-            </p>
-            <p class="content-text">
-              一人では継続することが難しくても仲間や相談できるメンターとともにチャレンジすることで学習効率を高めるような環境を提供します。
-            </p>
-            <p class="content-text">
-              バーチャルオフィスを使用することで、社員同士のコミュニケーションハードルを下げて継続学習をサポートしています。
-            </p>
+            <div class="content-text">
+              <p class="content-textLine">
+                未経験者でも安心して学べるカリキュラムとして、入門〜基礎編をそれぞれの進捗に合わせて取り組んでいただきます。
+              </p>
+              <p class="content-textLine">
+                一人では継続することが難しくても仲間や相談できるメンターとともにチャレンジすることで学習効率を高めるような環境を提供します。
+              </p>
+              <p class="content-textLine">
+                バーチャルオフィスを使用することで、社員同士のコミュニケーションハードルを下げて継続学習をサポートしています。
+              </p>
+            </div>
           </div>
-          <div>
-            <img src="./img/employees.jpg" alt="社員たち">
+
+          <div class="content-photoArea">
+            <img class="content-photo" src="./img/employees.jpg" alt="社員たち">
           </div>
         </div>
 
-        <!-- バナーゾーン -->
-        <div class="bannerWrap">
-          <div class="banner-item">
-            <div class="banner-logo">
-              <img src="./img/Detail.png" alt="Detail">
-            </div>
-            <div class="banner-detail">
-              <p class="banner-title">・募集要項</p>
-              <div class="banner-bottun">
-                <img src="./img/playButton.png" alt="再生ボタン">
-              </div>
-            </div>
-          </div>
+      </div>
 
-          <div class="banner-item">
-            <div class="banner-logo">
-              <img src="./img/Entry.png" alt="Entry">
-            </div>
-            <div class="banner-detail">
-              <p class="banner-title">・エントリー</p>
-              <div class="banner-bottun">
-                <img src="./img/playButton.png" alt="再生ボタン">
-              </div>
+      <!-- バナーゾーン -->
+      <div class="bannerWrap">
+        <div class="banner-item">
+          <div class="banner-logo">
+            <img src="./img/Detail.png" alt="Detail">
+          </div>
+          <div class="banner-detail">
+            <p class="banner-title">・募集要項</p>
+            <div class="banner-bottun">
+              <img src="./img/playButton.png" alt="再生ボタン">
             </div>
           </div>
         </div>
 
+        <div class="banner-item">
+          <div class="banner-logo">
+            <img src="./img/Entry.png" alt="Entry">
+          </div>
+          <div class="banner-detail">
+            <p class="banner-title">・エントリー</p>
+            <div class="banner-bottun">
+              <img src="./img/playButton.png" alt="再生ボタン">
+            </div>
+          </div>
+        </div>
       </div>
 
     </main>
 
-    <footer>
-      <div class="footer-icon">
-        <img src="./img/logo-wide.png" alt="企業ロゴ">
-      </div>
-      <div class="footer-nav">
-        <ul class="footer-navList">
-          <li class="footer-navListItem hidden-sp">トップ</li>
-          <li class="footer-navListItem">事業紹介</li>
-          <li class="footer-navListItem">仕事を知る</li>
-          <p>社員交流</p>
-          <p>1日の仕事の流れ</p>
-          <li class="footer-navListItem">環境を知る</li>
-          <p>キャリア研修制度</p>
-          <p>福利厚生</p>
-          <li class="footer-navListItem">人を知る</li>
-          <p>インタビュー０１</p>
-          <p>インタビュー０１</p>
-          <p>インタビュー０１</p>
-          <li class="footer-navListItem">募集要項</li>
-          <li class="footer-navListItem">エントリー</li>
-        </ul>
+    <footer class="footer">
+      <div class="footer-itemWrap">
+        <div class="footer-icon">
+          <img src="./img/logo-wide.png" alt="企業ロゴ">
+        </div>
+        <div class="footer-nav">
+          <ul class="footer-navList">
+            <li class="footer-navListItem hidden-sp">トップ</li>
+            <li class="footer-navListItem">事業紹介</li>
+            <li class="footer-navListItem">
+              仕事を知る
+              <p class="footer-navListItemDetail">社員交流</p>
+              <p class="footer-navListItemDetail">1日の仕事の流れ</p>
+            </li>
+            <li class="footer-navListItem">
+              環境を知る
+              <p class="footer-navListItemDetail">キャリア研修制度</p>
+              <p class="footer-navListItemDetail">福利厚生</p>
+            </li>
+
+            <li class="footer-navListItem">
+              人を知る
+              <p class="footer-navListItemDetail">インタビュー０１</p>
+              <p class="footer-navListItemDetail">インタビュー０１</p>
+              <p class="footer-navListItemDetail">インタビュー０１</p>
+            </li>
+            <li class="footer-navListItem">募集要項</li>
+            <li class="footer-navListItem">エントリー</li>
+          </ul>
+        </div>
       </div>
       <div class="footer-itemWrap">
         <small class="footer-item">&copy;2023 AwesomeSE All Right Reserved.</small>
