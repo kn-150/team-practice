@@ -1,0 +1,511 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* タイトル */
+.title {
+  position: relative;
+}
+
+.title-logo {
+  position: absolute;
+}
+
+.title-text {
+  position: absolute;
+}
+
+.hero,
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+/* 福利厚生 */
+.content-subTitle {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.content:first-child .content-textArea .content-text {
+  letter-spacing: 2px;
+}
+
+.columns {
+  background-color: #D9D9D9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.columns-itemImgArea {
+  width: 280px;
+  height: 280px;
+  background-color: #FFF;
+  border-radius: 140px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.columns-itemImg {
+  margin: 0 auto;
+}
+
+.columns-itemTitle {
+  display: flex;
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+  height: 68px;
+}
+
+.columns-itemText {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: 2px;
+}
+
+/* 教育カリキュラム */
+.content:last-child .content-photoArea {
+  background-color: #1FADC7;
+  width: 100%;
+}
+
+.content-photo {
+  opacity: 0.5;
+  display: block;
+}
+
+.content:last-child .content-textArea .content-title {
+  color: #1FADC7;
+}
+
+.content:last-child .content-textArea .content-text {
+  font-size: 16px;
+  line-height: 33px;
+  letter-spacing: 2px;
+}
+
+.content-textLine {
+  margin-top: 30px;
+}
+
+.content-textLine:first-child {
+  margin-top: 0;
+}
+
+/* バナー */
+.bannerWrap {
+  overflow: hidden;
+}
+
+.banner-item {
+  color: #FFF;
+  font-weight: bold;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-logo {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+
+}
+
+.banner-detail {
+  display: flex;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+}
+
+.banner-item:first-child {
+  background-color: #EDD100;
+}
+
+.banner-item:last-child {
+  position: relative;
+  background-image: url(./img/woman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* フッター */
+.footer {
+  margin: 0 auto;
+}
+
+.footer-navList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-navListItem {
+  font-weight: bold;
+}
+
+.footer-navListItemDetail {
+  font-weight: normal;
+  color: #A8A7A7;
+}
+
+@media screen and (min-width: 769px) {
+
+  /* ヘッダー部分 */
+  .hidden-pc {
+    display: none;
+  }
+
+  .header {
+    padding: 40px 40px;
+  }
+
+  .header-nav {
+    font-weight: bold;
+  }
+
+  .header-navList {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .header-navListItem {
+    margin-left: 40px;
+  }
+
+  .header-navListItem:last-child {
+    background-color: #EDD100;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 35px;
+  }
+
+  .header-navListItem .link:hover {
+    color: #EDD100;
+  }
+
+  .header-navListItem:last-child .link:hover {
+    color: #a0a0a0;
+  }
+
+  /* タイトル部分 */
+  .title {
+    height: 400px;
+  }
+
+  .title-logo {
+    top: 160px;
+    left: 100px;
+  }
+
+  .title-text {
+    top: 200px;
+    left: 220px;
+    font-size: 60px;
+  }
+
+
+  /* 福利厚生のご案内 */
+  .content:first-child .content-textArea {
+    text-align: center;
+    margin-top: 100px;
+    padding: 0 40px;
+  }
+
+  .content-title {
+    margin-top: 20px;
+    font-size: 44px;
+  }
+
+  .content:first-child .content-textArea .content-text {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  /* 福利厚生紹介 */
+  .columns {
+    margin: 100px 40px 0 0;
+    border-radius: 0 25px 25px 0;
+    padding: 100px 80px;
+    column-gap: 2vw;
+    row-gap: 4vw;
+  }
+
+  .columns-item {
+    width: 300px;
+  }
+
+  /* 教育カリキュラム */
+  .content:last-child {
+    position: relative;
+    height: 880px;
+    margin-top: 80px;
+  }
+
+  .content:last-child .content-photoArea {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+  }
+
+  .content-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .content:last-child .content-textArea {
+    position: absolute;
+    z-index: 20;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 0 0 40px 0;
+    height: 90%;
+    width: 760px;
+    padding: 100px 80px;
+  }
+
+  .content:last-child .content-textArea .content-text {
+    margin: 80px auto;
+    width: 90%;
+  }
+
+  /* バナー */
+  .bannerWrap {
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  .banner-item {
+    width: 50%;
+    font-size: 30px;
+  }
+
+  /* フッター */
+  .footer {
+    width: 90%;
+    padding: 100px 10px;
+  }
+
+  .footer-itemWrap {
+    display: flex;
+  }
+
+  .footer-itemWrap:first-child,
+  .footer-nav,
+  .footer-navList {
+    height: 340px;
+  }
+
+  .footer-navList {
+    row-gap: 20px;
+  }
+
+  .footer-navListItem {
+    font-size: 16px;
+  }
+
+  .footer-navListItemDetail {
+    font-size: 16px;
+  }
+
+  .footer-navListItemDetail:first-child {
+    margin-top: 10px;
+  }
+
+  .footer-icon {
+    width: 40%;
+  }
+
+  .footer-nav {
+    width: 50%;
+  }
+
+  .footer-itemWrap:last-child {
+    border-top: 1px solid #000;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  /* ヘッダー */
+  .header {
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .hidden-sp {
+    display: none;
+  }
+
+  .header-iconWrap {
+    width: 30%;
+  }
+
+  .header-icon {
+    width: 80%;
+    text-align: center;
+  }
+
+  .header-iconImg {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .header-nav {
+    border-top: #EDD100 solid 2px;
+    width: 80%;
+  }
+
+  /* タイトル */
+  .title {
+    height: 50vw;
+  }
+
+  .title-logo {
+    width: 60%;
+    top: 20vw;
+    left: 20vw;
+  }
+
+  .title-logoImg {
+    width: 100%;
+  }
+
+  .title-text {
+    font-size: 36px;
+    top: 24vw;
+    left: 16vw;
+  }
+
+  /* 福利厚生のご案内 */
+  .content:first-child {
+    padding-top: 68px;
+  }
+
+  .content:first-child .content-textArea .content-subTitle {
+    text-align: center;
+  }
+
+  .content-title {
+    margin-top: 32px;
+  }
+
+  .content:first-child .content-textArea .content-title {
+    text-align: center;
+  }
+
+  .content:first-child .content-title {
+    font-size: 24px;
+  }
+
+  .content:first-child .content-textArea .content-text {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  /* 福利厚生紹介 */
+  .columns {
+    width: 95%;
+    border-radius: 0 25px 0 0;
+    margin-top: 68px;
+    padding: 100px 40px;
+    row-gap: 20vw;
+  }
+
+  /* 教育カリキュラム */
+  .content:last-child {
+    background-color: #D9D9D9;
+  }
+
+  .content:last-child .content-title {
+    font-size: 32px;
+  }
+
+  .content:last-child .content-textArea {
+    width: 95%;
+    background-color: #FFF;
+    padding: 60px 40px;
+  }
+
+  .content:last-child .content-textArea .content-text {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .content-photoArea .content-photo {
+    width: 100%;
+  }
+
+  /* バナー */
+  .bannerWrap {
+    font-size: 24px;
+  }
+
+
+  /* フッター */
+  .footer {
+    margin-top: 80px;
+  }
+
+  .footer-itemWrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-text {
+    font-weight: bold;
+    font-size: 12px;
+    color: #EDD100;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-nav {
+    margin-top: 60px;
+  }
+
+  .footer-navListItem {
+    font-size: 13px;
+  }
+
+  .footer-navListItemDetail {
+    font-size: 10px;
+    margin-top: 4px;
+  }
+
+}
