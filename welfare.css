@@ -165,6 +165,11 @@
   font-weight: bold;
 }
 
+.footer-navListItemDetail {
+  font-weight: normal;
+  color: #A8A7A7;
+}
+
 @media screen and (min-width: 769px) {
 
   /* ヘッダー部分 */
@@ -323,6 +328,14 @@
     font-size: 16px;
   }
 
+  .footer-navListItemDetail {
+    font-size: 16px;
+  }
+
+  .footer-navListItemDetail:first-child {
+    margin-top: 10px;
+  }
+
   .footer-icon {
     width: 40%;
   }
@@ -356,7 +369,7 @@
   }
 
   .header-icon {
-    width: 100%;
+    width: 80%;
     text-align: center;
   }
 
@@ -451,6 +464,48 @@
 
   .content-photoArea .content-photo {
     width: 100%;
+  }
+
+  /* バナー */
+  .bannerWrap {
+    font-size: 24px;
+  }
+
+
+  /* フッター */
+  .footer {
+    margin-top: 80px;
+  }
+
+  .footer-itemWrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-text {
+    font-weight: bold;
+    font-size: 12px;
+    color: #EDD100;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-nav {
+    margin-top: 60px;
+  }
+
+  .footer-navListItem {
+    font-size: 13px;
+  }
+
+  .footer-navListItemDetail {
+    font-size: 10px;
+    margin-top: 4px;
   }
 
 }
