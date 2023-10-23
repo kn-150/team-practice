@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./welfare.css">
     <title>福利厚生</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -28,10 +30,15 @@
           <li class="header-navListItem"><a href="#" class="link">募集要項</a></li>
           <li class="header-navListItem"><a href="#" class="link">エントリー</a></li>
         </ul>
+
+        <div class="header-navIcon">
+          <span class="header-navIconLine"></span>
+        </div>
       </nav>
     </header>
+
     <main>
-      <div class="title">
+      <div class="title js-fade">
         <div class="title-logo">
           <img class="title-logoImg" src="./img/Welfare-title.png" alt="welfare">
         </div>
@@ -55,7 +62,7 @@
           </div>
 
           <div class="columns">
-            <div class="columns-item">
+            <div class="columns-item js-fade">
               <div class="columns-itemWrap">
                 <div class="columns-itemImgArea">
                   <img class="columns-itemImg" src="./img/icon1.png" alt="イラストアイコン">
@@ -65,7 +72,7 @@
               </div>
             </div>
 
-            <div class="columns-item">
+            <div class="columns-item js-fade">
               <div class="columns-itemWrap">
                 <div class="columns-itemImgArea">
                   <img class="columns-itemImg" src="./img/icon1.png" alt="イラストアイコン">
@@ -75,7 +82,7 @@
               </div>
             </div>
 
-            <div class="columns-item">
+            <div class="columns-item js-fade">
               <div class="columns-itemWrap">
                 <div class="columns-itemImgArea">
                   <img class="columns-itemImg" src="./img/icon1.png" alt="イラストアイコン">
@@ -85,7 +92,7 @@
               </div>
             </div>
 
-            <div class="columns-item">
+            <div class="columns-item js-fade">
               <div class="columns-itemWrap">
                 <div class="columns-itemImgArea">
                   <img class="columns-itemImg" src="./img/icon1.png" alt="イラストアイコン">
@@ -95,7 +102,7 @@
               </div>
             </div>
 
-            <div class="columns-item">
+            <div class="columns-item js-fade">
               <div class="columns-itemWrap">
                 <div class="columns-itemImgArea">
                   <img class="columns-itemImg" src="./img/icon1.png" alt="イラストアイコン">
@@ -160,6 +167,7 @@
               <img src="./img/playButton.png" alt="再生ボタン">
             </div>
           </div>
+          <div class="banner-itemBg"></div>
         </div>
       </div>
 
@@ -171,37 +179,92 @@
           <img class="footer-iconImg" src="./img/logo-wide.png" alt="企業ロゴ">
         </div>
         <p class="hidden-pc footer-text">AWESOME SE RECRUIT</p>
+
         <div class="footer-nav">
           <ul class="footer-navList">
-            <li class="footer-navListItem hidden-sp">トップ</li>
-            <li class="footer-navListItem">事業紹介</li>
-            <li class="footer-navListItem">
-              仕事を知る
-              <p class="footer-navListItemDetail"><span class="hidden-pc">-</span>社員交流</p>
-              <p class="footer-navListItemDetail"><span class="hidden-pc">-</span>1日の仕事の流れ</p>
+
+            <li class="footer-navListItemWrap">
+              <a class="footer-navListItem hidden-sp" href="#">トップ</a>
             </li>
-            <li class="footer-navListItem">
-              環境を知る
-              <p class="footer-navListItemDetail hidden-sp">キャリア研修制度</p>
-              <p class="footer-navListItemDetail hidden-sp">福利厚生</p>
+            <li class="footer-navListItemWrap">
+              <a class="footer-navListItem" href="#">事業紹介</a>
+              <div class="footer-navListIcon hidden-pc">&gt;</div>
+            </li>
+            <li class="footer-navListItemWrap">
+              <a class="footer-navListItem" href="#">仕事を知る</a>
+              <div class="footer-navListIcon hidden-pc">&gt;</div>
+              <div class="footer-navListDetail hidden-sp">
+                <a class="footer-navListDetailItem"><span>-</span>社員交流</a>
+                <a class="footer-navListDetailItem"><span>-</span>1日の仕事の流れ</a>
+              </div>
+            </li>
+            <div class="footer-navListDetail  hidden-pc">
+              <a class="footer-navListDetailItem"><span>-</span>社員交流</a>
+              <a class="footer-navListDetailItem"><span>-</span>1日の仕事の流れ</a>
+            </div>
+
+            <li class="footer-navListItemWrap">
+              <a class="footer-navListItem" href="#">環境を知る</a>
+              <div class="footer-navListIcon hidden-pc">&gt;</div>
+              <div class="footer-navListDetail hidden-sp">
+                <a class="footer-navListDetailItem">キャリア研修制度</a>
+                <a class="footer-navListDetailItem">福利厚生</a>
+              </div>
             </li>
 
-            <li class="footer-navListItem">
-              人を知る
-              <p class="footer-navListItemDetail hidden-sp">インタビュー０１</p>
-              <p class="footer-navListItemDetail hidden-sp">インタビュー０１</p>
-              <p class="footer-navListItemDetail hidden-sp">インタビュー０１</p>
+            <li class="footer-navListItemWrap">
+              <a class="footer-navListItem" href="#">人を知る</a>
+              <div class="footer-navListIcon hidden-pc">&gt;</div>
+              <div class="footer-navListDetail hidden-sp">
+                <a class="footer-navListDetailItem">インタビュー０１</a>
+                <a class="footer-navListDetailItem">インタビュー０１</a>
+                <a class="footer-navListDetailItem">インタビュー０１</a>
+              </div>
             </li>
-            <li class="footer-navListItem">募集要項</li>
-            <li class="footer-navListItem">エントリー</li>
+
+            <li class="footer-navListItemWrap">
+              <a class="footer-navListItem" href="#">募集要項</a>
+              <div class="footer-navListIcon hidden-pc">&gt;</div>
+            </li>
+            <li class="footer-navListItemWrap">
+              <a class="footer-navListItem" href="#">エントリー</a>
+              <div class="footer-navListIcon hidden-pc">&gt;</div>
+            </li>
           </ul>
         </div>
       </div>
       <div class="footer-itemWrap">
         <small class="footer-item">&copy;2023 AwesomeSE All Right Reserved.</small>
-        <p class="footer-item">コーポレートサイトはこちら→</p>
+        <a class="footer-item" href="#">コーポレートサイトはこちら→</a>
       </div>
     </footer>
+
+    <script>
+      $(function () {
+        jQuery(window).scroll();
+        $(window).scroll(function () {
+          $('.js-fade').each(function () {
+            let position = $(this).offset().top;
+            let scroll = $(window).scrollTop();
+            let windowHeight = $(window).height();
+            if (scroll > position - windowHeight + 100) {
+              $(this).addClass('active');
+            }
+          });
+        });
+
+
+        $('.header-navIcon').on('click', function () {
+          $(this).toggleClass('active');
+
+          if ($(this).hasClass('active')) {
+            $('.header-navList').addClass('active');
+          } else {
+            $('.header-navList').removeClass('active');
+          }
+        });
+      });
+    </script>
   </body>
 
 </html>
