@@ -6,7 +6,19 @@
   color: inherit;
 }
 
+/* フェードインする要素 */
+.js-fade {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(80px);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
 
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
 
 .header {
   display: flex;
@@ -150,6 +162,12 @@
   background-size: cover;
 }
 
+.banner-itemBg {
+  background-color: rgb(237, 209, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
 /* フッター */
 .footer {
   margin: 0 auto;
@@ -183,6 +201,10 @@
 .footer-item:last-child {
   font-weight: bold;
   color: #1FADC7;
+}
+
+.footer-item:last-child:hover {
+  color: #a0a0a0;
 }
 
 @media screen and (min-width: 769px) {
@@ -374,9 +396,7 @@
     margin-top: 80px;
   }
 
-  .footer-item:last-child:hover {
-    color: #a0a0a0;
-  }
+
 
 }
 
@@ -409,15 +429,90 @@
     width: 70%;
   }
 
+  /* ハンバーガーメニュー */
   .header-nav {
     display: block;
     border-top: #EDD100 solid 2px;
     width: 80%;
+    height: 100%;
   }
 
   .header-navList {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: all 0.8s;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background: #EDD100;
   }
+
+  .header-navListItem {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .header-navIcon {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 3;
+    background-color: #FFF;
+    border-radius: 10px;
+  }
+
+  .header-navIconLine {
+    display: block;
+    height: 1.5px;
+    width: 40px;
+    background-color: #000;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    transition: .30s;
+  }
+
+  .header-navIconLine::after {
+    display: block;
+    height: 1.5px;
+    width: 40px;
+    background-color: #000;
+    content: "";
+    position: absolute;
+    top: 20px;
+  }
+
+  .active .header-navIconLine {
+    top: 30px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: .30s;
+  }
+
+  .active .header-navIconLine::after {
+    top: 0px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: .30s;
+  }
+
+  .active {
+    transform: translateY(0%);
+  }
+
+
 
   /* タイトル */
   .title {
